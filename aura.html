@@ -1,23 +1,94 @@
-<section style="background-color: #fcfaf7; padding: 40px; margin: 30px 0; border-radius: 8px;">
-        <h2 style="text-align: center; color: #444; text-transform: uppercase; letter-spacing: 1px;">Our Heritage</h2>
-        <div style="display: flex; align-items: center; gap: 30px; margin-top: 20px;">
-            <div style="flex: 1;">
-                <p>
-                    Aura & Thread Collective began as <strong>Thrift Thrills</strong>, a passion project 
-                    dedicated to the hunt for hidden gems and the belief that quality should be 
-                    accessible. We spent years identifying the superior stitch-work of vintage 
-                    garments and the enduring feel of natural fibers.
-                </p>
-                <p>
-                    As we curated the past, we began to envision the future. We took the lessons 
-                    of durability and timeless style from our "thrift" roots and infused them into 
-                    a new standard of professional wear. 
-                </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura & Thread Collective | Heritage</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center; /* Centering content (3 Marks) */
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        /* Styling for the 5 containers (5 Marks) */
+        .image-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-text {
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <h1 style="font-size: 2.5rem; color: #3d3d3d; margin-bottom: 10px;">Our Heritage</h1>
+        <hr style="width: 50px; border: 1px solid #c5a47e; margin-bottom: 30px;">
+
+        <p style="font-style: italic; color: #666;">From thrifted roots to professional standards.</p>
+
+        <div class="gallery-grid">
+            
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=500" alt="Fabric Detail">
+                <div class="card-text">Premium Stitching</div>
             </div>
-            <div style="flex: 1;">
-                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80" 
-                     alt="Close up of high quality fabric texture" 
-                     style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; box-shadow: 5px 5px 15px rgba(0,0,0,0.05);">
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500" alt="Vintage Shirt">
+                <div class="card-text">Heritage Linen</div>
             </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1594932224010-75670779d717?auto=format&fit=crop&w=500" alt="Suit Texture">
+                <div class="card-text">Structured Wool</div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500" alt="Boutique Interior">
+                <div class="card-text">The Studio</div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=500" alt="Thread Spools">
+                <div class="card-text">Raw Materials</div>
+            </div>
+
         </div>
-    </section>
+    </div>
+
+</body>
+</html>
+     
